@@ -10,8 +10,8 @@ import (
 	"io"
 	"strings"
 
-	"github.com/mndrix/golog/lex"
-	"github.com/mndrix/golog/term"
+	"github.com/udistrital/golog/lex"
+	"github.com/udistrital/golog/term"
 )
 
 // NoMoreTerms is returned by Next() when it can read no more terms
@@ -151,7 +151,7 @@ func (r *TermReader) ResetOperatorTable() {
 	r.Op(700, xfx, `=..`)
 	r.Op(700, xfx, `is`, `=:=`, `=\=`, `<`, `=<`, `>`, `>=`)
 	r.Op(500, yfx, `+`, `-`, `/\`, `\/`) // syntax highlighter `
-	r.Op(400, yfx, `*`, `/`, `//`, `rem`, `mod`, `<<`, `<<`)
+	r.Op(400, yfx, `*`, `/`, `//`, `rem`, `mod`, `<<`, `<<`, `rnd`,`int`, `approach`)
 	r.Op(200, xfx, `**`)
 	r.Op(200, xfy, `^`)
 	r.Op(200, fy, `-`, `\`) // syntax highlighter `

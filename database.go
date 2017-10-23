@@ -1,8 +1,8 @@
 package golog
 
 import . "fmt"
-import . "github.com/mndrix/golog/term"
-import . "github.com/mndrix/golog/util"
+import . "github.com/udistrital/golog/term"
+import . "github.com/udistrital/golog/util"
 
 import (
 	"bytes"
